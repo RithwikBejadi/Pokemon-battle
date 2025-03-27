@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getPokemon } from './fetchPokemon';
+import { getPokemon } from './fetchData';
 
 const Battle = () => {
   const [pokemon1, setPokemon1] = useState(null);
