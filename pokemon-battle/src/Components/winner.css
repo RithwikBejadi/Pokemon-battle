@@ -6,7 +6,7 @@ body {
 
 .winner-container {
     height: 100vh;
-    background-image: url(../../images/image\ copy.png); /* Use a victory-themed background */
+    background-image: url(../../images/image\ copy.png); 
     background-size: cover;
     background-position: center;
     display: flex;

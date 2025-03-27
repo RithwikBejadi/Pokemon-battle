@@ -4,7 +4,7 @@ body {
 }
 
 .main-container {
-    background-image: url(../../images/landing.jpg); /* Same image as before */
+    background-image: url(../../images/landing.jpg); 
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -31,9 +31,9 @@ body {
     text-transform: uppercase;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
     animation: shine 3s infinite alternate;
-    text-shadow: 2px 2px 0 #6a0dad, /* Purple shadow */
-                 4px 4px 0 #b666d2, /* Lighter purple shadow */
-                 6px 6px 0 #000;   /* Black shadow for depth */
+    text-shadow: 2px 2px 0 #6a0dad, 
+                 4px 4px 0 #b666d2, 
+                 6px 6px 0 #000;   
 }
 
 @keyframes shine {

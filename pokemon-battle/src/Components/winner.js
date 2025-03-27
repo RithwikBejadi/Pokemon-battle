@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { getPokemon } from '../fetchData';
-import './winner.css'; // Include the updated CSS
+import './winner.css'; 
 
 const Winner = () => {
   const location = useLocation();

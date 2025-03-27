@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getPokemon } from '../fetchData'; // Import the fetch function
+import { getPokemon } from '../fetchData'; 
 import "./select.css";
 
 const SelectPokemon = () => {
@@ -11,7 +11,7 @@ const SelectPokemon = () => {
 
   const validatePokemon = async (name) => {
     const data = await getPokemon(name.toLowerCase());
-    return data !== null; // If valid, it returns true; otherwise, false
+    return data !== null; 
   };
 
   const startBattle = async () => {
