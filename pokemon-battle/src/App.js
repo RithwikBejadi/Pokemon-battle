@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Main from './Components/main';
+import SelectPokemon from './Components/selectPokemon';
+import Battle from './Components/battle';
+import Winner from './Components/winner';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Reac
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/select" element={<SelectPokemon />} />
+        <Route path="/battle" element={<Battle />} />
+        <Route path="/winner" element={<Winner />} />
+      </Routes>
+    </Router>
   );
 }
 

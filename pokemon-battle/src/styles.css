@@ -1,0 +1,17 @@
+.main-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .start-btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .start-btn:hover {
+    background-color: #ffaa00;
+  }

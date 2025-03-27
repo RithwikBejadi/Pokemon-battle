@@ -1,0 +1,95 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    background-image: url(../../images/landing.jpg); /* Same image as before */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.main-container h1 {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: 'Pokemon', sans-serif;
+    background: linear-gradient(135deg, rgba(214, 77, 252, 0.9), rgba(145, 193, 255, 0.8));
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    width: 60%;
+    text-align: center;
+    padding: 50px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    animation: shine 3s infinite alternate;
+    text-shadow: 2px 2px 0 #6a0dad, /* Purple shadow */
+                 4px 4px 0 #b666d2, /* Lighter purple shadow */
+                 6px 6px 0 #000;   /* Black shadow for depth */
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.main-container button {
+    padding: 15px 40px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #6a0dad, #b666d2);
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    top: 60%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+}
+
+.main-container button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 250%;
+    height: 250%;
+    background: radial-gradient(white, transparent);
+    opacity: 0.7;
+    animation: twinkle 2s infinite linear;
+}
+
+.main-container button:hover {
+    background: linear-gradient(135deg, #b666d2, #6a0dad);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+    transform: scale(1.1);
+}
+
+@keyframes twinkle {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translate(50%, 50%) scale(1.5);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+}
